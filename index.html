@@ -3,13 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ainur — портфолио</title>
+  <title>Tanabay Ainur — портфолио</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
+
+  <header>
+    <h1>Tanabay Ainur</h1>
+    <nav>
+      <a href="#about">Обо мне</a>
+      <a href="#projects">Проекты</a>
+      <a href="#contact">Контакты</a>
+      <button id="theme-toggle" type="button">Тёмная тема</button>
+    </nav>
+  </header>
+
   <main>
-    <h1>Ainur</h1>
+    <section id="about">
+      <h2>Обо мне</h2>
+      <p>Мне 19, я учусь в КБТУ. Я с Алматы. Моя будущая профессия IT Management.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Проекты</h2>
+
+      <article>
+        <h3> HTML Template</h3>
+        <p>A web page template built with HTML and CSS during Week 1.</p>
+        <a href="https://github.com/ainurdd/iwamad-practice.git">Открыть проект</a>
+      </article>
+
+      <article>
+        <h3>Title</h3>
+        <p>about project</p>
+        <a href="https://github.com/ainurdd/iwamad-practice.git">Открыть проект</a>
+      </article>
+
+      <article>
+        <h3>Title</h3>
+        <p>about project</p>
+        <a href="https://github.com/ainurdd/iwamad-practice.git">Открыть проект</a>
+      </article>
+    </section>
+
+    <section id="contact">
+      <h2>Контакты</h2>
+
+      <form id="contact-form" novalidate>
+        <div>
+          <label for="name">Имя</label>
+          <input type="text" id="name" name="name">
+          <p class="error" id="name-error"></p>
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+          <p class="error" id="email-error"></p>
+        </div>
+
+        <div>
+          <label for="message">Сообщение</label>
+          <textarea id="message" name="message" rows="5"></textarea>
+          <p class="error" id="message-error"></p>
+        </div>
+
+        <button type="submit">Отправить</button>
+        <p id="form-success" aria-live="polite"></p>
+      </form>
+    </section>
   </main>
+
+  <footer>
+    <p>Tanabay Ainur, 2026</p>
+  </footer>
+
 </body>
 </html>
